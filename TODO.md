@@ -5,5 +5,7 @@
 ## Normal priority
 - [ ] `ShardRecipeHandler.cs` should be broken into multiple files, maybe even a `Recipes` subdirectory?
 - [ ] Various Vanities content should be configurable
-- [ ] Add an option to swap the drop conditions for the Gravity Globe and the Soaring Insignia
+- [ ] Add an option to swap the drop conditions for the Gravity Globe and the Soaring Insignia 
 - [ ] ![lol](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/TaterBlight_Telling_Me_To_Make_Male_Legs_Sprites.png?raw=true)
+## ["Plant priority"](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/Plant_Telling_Me_To_Make_Him_A_ToDo_List_Priority.png?raw=true)
+- [ ] Implement the Magiluminescense movement speed nerf
