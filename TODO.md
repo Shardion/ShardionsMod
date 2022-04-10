@@ -6,3 +6,4 @@
 ## Normal priority
 - [ ] `ShardRecipeHandler.cs` should be broken into multiple files, maybe even a `Recipes` subdirectory?
 - [ ] Various Vanities content should be configurable
+- [ ] Add an option to swap the drop conditions for the Gravity Globe and the Soaring Insignia
