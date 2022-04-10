@@ -1,0 +1,7 @@
+displayName = Shardion's Mod
+author = Shardion, Split
+version = 0.7
+includePDB = true
+includeSource = true
+hideCode = false
+hideResources = false
