@@ -26,3 +26,6 @@ Changes in these areas can be disabled entirely, or fine-tuned to do only what t
 - Automatically generated tooltips ([ShardItem.cs](https://github.com/Shardion/ShardionsMod/blob/master/Utilities/ShardItem.cs))
 - Dynamic recipe enabling/disabling via custom Conditions ([ShardRecipeHandler.cs](https://github.com/Shardion/ShardionsMod/blob/master/ShardRecipeHandler.cs))
 - Separate, automatically-used Assets folder ([ShardItem.cs](https://github.com/Shardion/ShardionsMod/blob/master/Utilities/ShardItem.cs))
+
+## What needs done
+See [TODO.md](https://github.com/Shardion/ShardionsMod/blob/master/TODO.md)
