@@ -12,8 +12,6 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
             Tooltip.SetDefault("'A boring sweater for a boring person'");
             int bodySlot = Mod.GetEquipSlot(Name, EquipType.Body);
             ArmorIDs.Body.Sets.HidesHands[bodySlot] = false;
-        //    ArmorIDs.Body.Sets.HidesArms[bodySlot] = false;
-        //    ArmorIDs.Body.Sets.HidesTopSkin[bodySlot] = true;
         }
 
         public override void SetDefaults()
@@ -28,29 +26,24 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
             Item.maxStack = 1;
         }
 
-        /*public override void DrawHands(ref bool drawHands, ref bool drawArms)
-        {
-            drawHands = true;
-        }*/
-
         public override void AddRecipes()
         {
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.AreThreadRecipesEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.AreThreadRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 4)
                 .AddIngredient(ItemID.BlackThread, 3)
                 .AddTile(TileID.Loom)
                 .Register();
 
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.AreDyeRecipesEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.AreDyeRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 4)
                 .AddIngredient(ItemID.BlackDye, 1)
                 .AddTile(TileID.Loom)
                 .Register();
             
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.AreNoColorRecipesEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.AreNoColorRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 4)
                 .AddTile(TileID.Loom)
                 .Register();

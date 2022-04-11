@@ -18,7 +18,7 @@ namespace ShardionsMod.Content.VV.Items.Crafting.Thread
         public override void AddRecipes()
         {
             this.CreateRecipe(2)
-                .AddCondition(ShardRecipeHandler.IsVVEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.IsVVEnabled)
                 .AddRecipeGroup("Wood", 1)
                 .AddIngredient(ItemID.Cobweb, 4)
                 .AddTile(TileID.Loom)

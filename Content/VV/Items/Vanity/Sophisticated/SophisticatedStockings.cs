@@ -10,7 +10,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sophisticated Stockings");
-            Tooltip.SetDefault("'Not the best idea in this world'");
+            Tooltip.SetDefault("'Not the best idea in this world'\nMade unobtainable due to multiple tModLoader 1.4 regressions, as the sprite cannot look correct with them\nExpect a fix in 4 or 5 weeks");
         }
 
         // this is a separate function so we don't have to redefine the entire setdefaults function each time
@@ -29,9 +29,9 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
         }
 
         public override void AddRecipes()
-        {
+        {/*
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.AreThreadRecipesEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.AreThreadRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
                 .AddIngredient(Mod, "CyanThread", 1)
                 .AddIngredient(Mod, "WhiteThread", 1)
@@ -39,7 +39,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .Register();
             
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.AreDyeRecipesEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.AreDyeRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
                 .AddIngredient(ItemID.BrightSilverDye, 1)
                 .AddIngredient(ItemID.CyanDye, 1)
@@ -47,11 +47,11 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .Register();
             
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.AreNoColorRecipesEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.AreNoColorRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
                 .AddTile(TileID.Loom)
                 .Register();
-        }
+        */}
     }
     [AutoloadEquip(EquipType.Legs)]
     public class SophisticatedStockingsNoBand : SophisticatedStockings

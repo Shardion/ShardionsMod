@@ -18,8 +18,8 @@ namespace ShardionsMod.Content.VV.Items.Crafting
         public override void AddRecipes()
         {
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.IsVVEnabled)
-                .AddRecipeGroup("VariousVanities:StrangeDyes", 3)
+                .AddCondition(Content.VV.Recipes.VVConditions.IsVVEnabled)
+                .AddRecipeGroup("VariousVanities:DyeSources", 3)
                 .AddTile(TileID.DyeVat)
                 .Register();
 
@@ -45,7 +45,7 @@ namespace ShardionsMod.Content.VV.Items.Crafting
             foreach (int dye in dyes)
             {
                 Mod.CreateRecipe(dye)
-                    .AddCondition(ShardRecipeHandler.IsVVEnabled)
+                    .AddCondition(Content.VV.Recipes.VVConditions.IsVVEnabled)
                     .AddIngredient(this, 1)
                     .AddTile(TileID.DyeVat)
                     .Register();

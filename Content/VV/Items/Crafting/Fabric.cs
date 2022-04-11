@@ -23,7 +23,7 @@ namespace ShardionsMod.Content.VV.Items.Crafting
         public override void AddRecipes()
         {
             this.CreateRecipe()
-                .AddCondition(ShardRecipeHandler.IsVVEnabled)
+                .AddCondition(Content.VV.Recipes.VVConditions.IsVVEnabled)
                 .AddIngredient(ItemID.Cobweb, 12)
                 .AddTile(TileID.Loom)
                 .Register();
