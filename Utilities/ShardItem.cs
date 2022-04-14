@@ -13,7 +13,10 @@ namespace ShardionsMod.Utilities
 
         // We have a separate assets folder to keep the code clean and separated from the assets
         // As a side effect, this also enforces that items are always content
-        public override string Texture => this.GetType().ToString().Replace(".", "/").Replace("Content", "Assets");
+        // Additionally this allows us to automatically add placeholder sprites and tooltips
+        public override string Texture => UsePlaceholderSprite ? "ShardionsMod/Assets/ShardPlaceholder" : this.GetType().ToString().Replace(".", "/").Replace("Content", "Assets");
+
+        public bool UsePlaceholderSprite = false;
 
         public static readonly string[,] Developers = new string[,] { { "shardion", "00FFEE" } };
 
@@ -33,6 +36,10 @@ namespace ShardionsMod.Utilities
             if (Variant != null)
             {
                 tooltips.Add(new TooltipLine(Mod, "Item Variant", "Variant: " + Variant));
+            }
+            if (UsePlaceholderSprite)
+            {
+                tooltips.Add(new TooltipLine(Mod, "Sprite Request", "This item is currently using a placeholder sprite. If you want to contribute a sprite for it, join our Discord!"));
             }
         }
 

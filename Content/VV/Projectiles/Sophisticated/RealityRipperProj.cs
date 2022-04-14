@@ -19,6 +19,7 @@ namespace ShardionsMod.Content.VV.Projectiles.Sophisticated
 
 		public override void SetDefaults()
 		{
+            UsePlaceholderSprite = true;
 			Projectile.width = 22;
 			Projectile.height = 32;
 			Projectile.aiStyle = 0;

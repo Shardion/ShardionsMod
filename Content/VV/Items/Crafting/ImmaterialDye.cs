@@ -4,10 +4,11 @@ using ShardionsMod.Utilities;
 
 namespace ShardionsMod.Content.VV.Items.Crafting
 {
-    public class PrismaticDye : ShardItem
+    public class ImmaterialDye : ShardItem
     {
         public override void SetDefaults()
         {
+            UsePlaceholderSprite = true;
             Item.width = 22;
             Item.height = 32;
             Item.value = 0;

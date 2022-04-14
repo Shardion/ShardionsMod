@@ -5,7 +5,6 @@ using Terraria.ID;
 
 namespace ShardionsMod.Content
 {
-    // TODO: This should really, really be broken into separate files with how large it's gotten
     public class ShardRecipeGroups : ModSystem
     {
         public static RecipeGroup StrangeDyes;

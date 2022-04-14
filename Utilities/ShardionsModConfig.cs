@@ -79,6 +79,11 @@ namespace ShardionsMod.Utilities
         [Tooltip("Nerfs the Magiluminescence to a 5% movement speed buff (from 20%).")]
         public bool MagiluminescenceNerf;
         */
+
+        [DefaultValue(true)]
+        [Label("Dryad always sells every Planter Box")]
+        [Tooltip("Makes the Dryad always sell every Planter Box (as they are all functionally equivalent).")]
+        public bool AlwaysSellPlanterBoxes;
     }
 
     public class QoLConfig : ModConfig {

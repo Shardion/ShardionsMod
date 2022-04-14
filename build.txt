@@ -1,6 +1,6 @@
 displayName = Shardion's Mod
 author = Shardion, Split
-homepage = https://github.com/Shardion/ShardionsMod
+homepage = https://discord.gg/PRYhCSeCNu
 version = 0.8
 includePDB = true
 includeSource = true
