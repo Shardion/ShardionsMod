@@ -12,13 +12,14 @@ Changes in these areas can be disabled entirely, or fine-tuned to do only what t
 ## Total list of changes
 - ### Vanity items
   - Mod developer vanity sets ([Sophisticated set](https://github.com/Shardion/ShardionsMod/tree/master/Content/VV/Items/Vanity/Sophisticated))
-  - Dyes made easier to attain ([PrismaticDye.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/VV/Items/Crafting/PrismaticDye.cs))
+  - Dyes made easier to attain ([ImmaterialDye.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/VV/Items/Crafting/ImmaterialDye.cs))
 - ### Quality-of-life
-  - Crate upgrading, downgrading and conversion ([ShardRecipeHandler.cs](https://github.com/Shardion/ShardionsMod/blob/master/ShardRecipeHandler.cs))
-  - Gem conversion ([ShardRecipeHandler.cs](https://github.com/Shardion/ShardionsMod/blob/master/ShardRecipeHandler.cs))
+  - Crate upgrading, downgrading and conversion ([CrateCrafting.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/QoL/Recpies/CrateCrafting.cs))
+  - Gem conversion ([GemCrafting.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/QoL/Recpies/GemCrafting.cs))
 - ### Balancing
-  - Magiluminescence recipe nerf ([ShardRecipeHandler.cs](https://github.com/Shardion/ShardionsMod/blob/master/ShardRecipeHandler.cs))
-  - Molotov Cocktail recipe buff ([ShardRecipeHandler.cs](https://github.com/Shardion/ShardionsMod/blob/master/ShardRecipeHandler.cs))
+  - Magiluminescence recipe nerf ([MagiluminescenceRecipeNerf.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/Balancing/Recipes/MagiluminescenceRecipeNerf.cs))
+  - Molotov Cocktail recipe buff ([MolotovCocktailRecipeBuff.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/Balancing/Recipes/MolotovCocktailRecipeBuff.cs))
+  - Dryad always sells every Planter Box ([BalancingGlobalNPC.cs](https://github.com/Shardion/ShardionsMod/blob/master/Content/Balancing/NPCs/BalancingGlobalNPC.cs))
 
 ## Trickery
 - Custom item classes to enable mod-wide changes to items ([ShardItem.cs](https://github.com/Shardion/ShardionsMod/blob/master/Utilities/ShardItem.cs))
