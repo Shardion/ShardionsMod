@@ -7,7 +7,7 @@
 - [ ] ![lol](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/TaterBlight_Telling_Me_To_Make_Male_Legs_Sprites.png?raw=true)
 - [ ] Pre-Hardmode ore variants can be converted at an Alchemy Table, Hardmode ore variants at a Lihzahrd Altar (the Golem summoning tile)
 - [ ] Extractinator only gives the ore variants you did not get in your world, and gives coins significantly less often
-- [ ] Prismatic Dye needs a sprite, ~~and a rename since its current name conflicts with a 1.4 item~~
+- [ ] Immaterial Dye needs a sprite
 ## Low priority
 - [ ] Various Vanities content should be configurable
 - [ ] Characters named after mod developers spawn with their corresponding developer vanity set
