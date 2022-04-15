@@ -2,6 +2,7 @@
 ## High priority
 - [ ] Some vanilla recipes modified to have a "is this feature not enabled" condition keep it after a mod unload
 - [ ] Re-implement female leg textures for armor after [IbanPlay's tMod fix](https://github.com/tModLoader/tModLoader/pull/2277) is merged and in stable
+- [ ] Fix the sell prices for Gems not being locked to that of Amethyst when Gem conversion is enabled
 ## Normal priority
 - [ ] Add an option to swap the drop conditions for the Gravity Globe and the Soaring Insignia 
 - [ ] ![lol](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/TaterBlight_Telling_Me_To_Make_Male_Legs_Sprites.png?raw=true)
