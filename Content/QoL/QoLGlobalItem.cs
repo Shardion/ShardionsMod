@@ -13,6 +13,7 @@ namespace ShardionsMod.Content.QoL {
                 ItemID.Ruby,
                 ItemID.Sapphire,
                 ItemID.Emerald,
+                ItemID.Diamond,
                 ItemID.Amber
             };
             if (gems.Contains<int>(item.type) && ModContent.GetInstance<Utilities.QoLConfig>().GemCrafting) {
