@@ -47,6 +47,11 @@ namespace ShardionsMod.Utilities
         [Label("Use no color in vanity recipes")]
         [Tooltip("Does not require a world rejoin or mod reload!")]
         public bool DoNone { get { return _none; } set { if (value) { _dyedThreads = false; _dyes = false; _none = true; } } }
+        
+        [DefaultValue(true)]
+        [Label("Pre-Boss Familiar set recipes")]
+        [Tooltip("Adds recipes for the Familiar vanity set that can be created pre-boss.")]
+        public bool PreBossFamiliarSet;
     }
     public class BalancingConfig : ModConfig {
         public override ConfigScope Mode => ConfigScope.ServerSide;
@@ -101,7 +106,7 @@ namespace ShardionsMod.Utilities
         [ReloadRequired]
         [DefaultValue(true)]
         [Label("Gem conversion")]
-        [Tooltip("Allows you to convert gems to Diamonds and back. Locks sell price of all gems to that of Amethyst.")]
+        [Tooltip("Allows you to convert gems to Diamonds and back. Locks sell price of all gems to that of Amethyst. Requires a reload.")]
         public bool GemCrafting;
 
     }
