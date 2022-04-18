@@ -98,6 +98,7 @@ namespace ShardionsMod.Utilities
         [Tooltip("Allows you to convert biome crates to gold crates and back, upgrade crates and downgrade crates.")]
         public bool CrateCrafting;
         
+        //[ReloadRequired]
         [DefaultValue(true)]
         [Label("Gem conversion")]
         [Tooltip("Allows you to convert gems to Diamonds and back. Locks sell price of all gems to that of Amethyst.")]
