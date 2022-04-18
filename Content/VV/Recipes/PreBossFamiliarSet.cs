@@ -1,4 +1,3 @@
-using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 using static ShardionsMod.Content.VV.Recipes.VVConditions;
