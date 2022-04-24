@@ -78,6 +78,11 @@ namespace ShardionsMod.Utilities
         [Tooltip("Changes the Magiluminescence recipe to require 4 Shadow Scales/Tissue Samples.")]
         public bool MagiluminescenceRecipeNerf;
 
+        [DefaultValue(true)]
+        [Label("Terraspark Boots recipe nerf")]
+        [Tooltip("Changes the Terraspark Boots recipe to require 1 of each Mechanical Boss soul.")]
+        public bool TerrasparkBootsRecipeNerf;
+
         /* You do it, plant
         [DefaultValue(true)]
         [Label("Magiluminescence nerf")]

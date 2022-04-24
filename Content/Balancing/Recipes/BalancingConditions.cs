@@ -12,5 +12,7 @@ namespace ShardionsMod.Content.Balancing.Recipes
         public static readonly Condition IsMolotovCocktailRecipeBuffNotEnabled = new Condition(NetworkText.FromKey("RecipeConditions.IsMolotovCocktailRecipeBuffNotEnabled"), _ => !ModContent.GetInstance<Utilities.BalancingConfig>().MolotovRecipeBuff);
         public static readonly Condition IsMagiluminescenceRecipeNerfEnabled = new Condition(NetworkText.FromKey("RecipeConditions.IsMagiluminescenceRecipeNerfEnabled"), _ => ModContent.GetInstance<Utilities.BalancingConfig>().MagiluminescenceRecipeNerf);
         public static readonly Condition IsMagiluminescenceRecipeNerfNotEnabled = new Condition(NetworkText.FromKey("RecipeConditions.IsMagiluminescenceRecipeNerfNotEnabled"), _ => !ModContent.GetInstance<Utilities.BalancingConfig>().MagiluminescenceRecipeNerf);
+        public static readonly Condition IsTerrasparkBootsRecipeNerfEnabled = new Condition(NetworkText.FromKey("RecipeConditions.IsTerrasparkBootsRecipeNerfEnabled"), _ => ModContent.GetInstance<Utilities.BalancingConfig>().TerrasparkBootsRecipeNerf);
+        public static readonly Condition IsTerrasparkBootsRecipeNerfNotEnabled = new Condition(NetworkText.FromKey("RecipeConditions.IsTerrasparkBootsRecipeNerfNotEnabled"), _ => !ModContent.GetInstance<Utilities.BalancingConfig>().TerrasparkBootsRecipeNerf);
     }
 }

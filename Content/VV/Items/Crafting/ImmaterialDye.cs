@@ -8,7 +8,7 @@ namespace ShardionsMod.Content.VV.Items.Crafting
     {
         public override void SetDefaults()
         {
-            UsePlaceholderSprite = true;
+            //UsePlaceholderSprite = true;
             Item.width = 22;
             Item.height = 32;
             Item.value = 0;
