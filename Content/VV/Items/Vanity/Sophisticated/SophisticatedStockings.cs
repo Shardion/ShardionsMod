@@ -14,11 +14,11 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
         }
 
         // this is a separate function so we don't have to redefine the entire setdefaults function each time
-        public virtual void SetVariantDefaults() { Variant = "White Banded"; FemaleLegsTexture = "SophisticatedStockings_FemaleLegs"; }
+        //public virtual void SetVariantDefaults() { Variant = "White Banded"; FemaleLegsTexture = "SophisticatedStockings_FemaleLegs"; }
 
         public override void SetDefaults()
         {
-            SetVariantDefaults();
+            FemaleLegsTexture = "SophisticatedStockings_FemaleLegs";
             Developer = (int)DevIndex.Shardion;
             Item.width = 22;
             Item.height = 32;
@@ -52,7 +52,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .AddTile(TileID.Loom)
                 .Register();
         */}
-    }
+    }/* // nooooooooo mooooooooooore variants! i actually kinda liked the variety but whatever it got too difficult to maintain
     [AutoloadEquip(EquipType.Legs)]
     public class SophisticatedStockingsNoBand : SophisticatedStockings
     {
@@ -82,5 +82,5 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
     {
         public override void SetVariantDefaults() { Variant = "Black (No Suspenders)"; FemaleLegsTexture = "SophisticatedStockingsBlackNoSuspenders_FemaleLegs"; }
         public override void AddRecipes() { AddVariantRecipe(ModContent.GetInstance<SophisticatedStockingsBlack>(), this); }
-    }
+    }*/
 }

@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System.Linq;
+using Terraria.GameContent.ItemDropRules;
 
 namespace ShardionsMod.Content.Balancing.NPCs
 {
@@ -18,6 +19,11 @@ namespace ShardionsMod.Content.Balancing.NPCs
 			ItemID.ShiverthornPlanterBox
 		};
 		public override bool InstancePerEntity => true;
+		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot) {
+			if (npc.type == NPCID.HallowBoss) { // what a descriptive name, thanks red
+				npcLoot.Remove(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemID.EmpressFlightBooster));
+			}
+		}
 		public override void SetupShop(int type, Chest shop, ref int nextSlot) {
 			if (type == NPCID.Dryad && ModContent.GetInstance<Utilities.BalancingConfig>().AlwaysSellPlanterBoxes) {
 				int[] ignore = {};
