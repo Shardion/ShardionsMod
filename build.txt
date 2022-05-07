@@ -1,7 +1,7 @@
 displayName = Shardion's Mod
 author = Shardion, Split
 homepage = https://discord.gg/PRYhCSeCNu
-version = 1.1
+version = 1.2
 includePDB = true
 includeSource = true
 hideCode = false
