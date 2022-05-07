@@ -31,6 +31,7 @@ namespace ShardionsMod.Content.Balancing.Items
 						player.QuickSpawnItem(entitySource, ItemID.FairyQueenRangedItem); // Eventide
 						break;
 				}
+				player.QuickSpawnItem(entitySource, ItemID.GravityGlobe); // Gravity Globe
 				if (Main.rand.NextBool(10)) { player.QuickSpawnItem(entitySource, ItemID.RainbowWings); } // Empress Wings
 				if (Main.rand.NextBool(20)) { player.QuickSpawnItem(entitySource, ItemID.SparkleGuitar); } // Stellar Tune
 				if (Main.rand.NextBool(20)) { player.QuickSpawnItem(entitySource, ItemID.RainbowCursor); } // Rainbow Cursor
