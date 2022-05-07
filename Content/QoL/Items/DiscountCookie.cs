@@ -11,7 +11,7 @@ namespace ShardionsMod.Content.QoL.Items
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Eat to permanently gain the Discount Card effect\nDoes not stack with the Discount Card");
+            Tooltip.SetDefault("Eat to permanently gain the Discount Card effect\nDoes not stack with the Discount Card\nWe are aware the sprite is broken");
 
 			ItemID.Sets.FoodParticleColors[Item.type] = new Color[3] {
 				new Color(81, 121, 194),
