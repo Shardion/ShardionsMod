@@ -10,7 +10,7 @@ namespace ShardionsMod.Content.QoL {
         public override void SaveData(TagCompound tag)
         {
             var playerData = new List<string>();
-            if (DiscountCookie) playerData.Add("MutantsPactSlot");
+            if (DiscountCookie) playerData.Add("DiscountCookie");
             tag.Add($"{Mod.Name}.{Player.name}.Data", playerData);
         }
         
@@ -20,11 +20,11 @@ namespace ShardionsMod.Content.QoL {
             DiscountCookie = playerData.Contains("DiscountCookie");
         }
 
-        public override void PostUpdate()
+        public override void PostUpdateEquips()
         {
+            base.PostUpdateEquips();
             if (DiscountCookie)
                 Player.discount = true;
-            base.PostUpdate();
         }
     }
 }
