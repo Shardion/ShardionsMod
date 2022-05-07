@@ -128,5 +128,10 @@ namespace ShardionsMod.Utilities
         [Label("Glowing Mushroom biome enemies drop Mushroom Grass Seeds")]
         [Tooltip("Adds 1 Glowing Mushroom Grass Seeds to the drops of all Glowing Mushroom enemies, at a 10% chance,\nand 2 Glowing Mushroom Grass Seeds at a 100% chance for Truffle Worms.")]
         public bool MushroomEnemiesDropSeeds;
+
+        [DefaultValue(true)]
+        [Label("Discount Cookie")]
+        [Tooltip("Allows players to craft the Discount Cookie, a consumable item that permanently\ngrants the Discount Card effect (does not stack with Discount Card).")]
+        public bool DiscountCookie;
     }
 }
