@@ -94,6 +94,11 @@ namespace ShardionsMod.Utilities
         [Label("Dryad always sells every Planter Box")]
         [Tooltip("Makes the Dryad always sell every Planter Box (as they are all functionally equivalent).")]
         public bool AlwaysSellPlanterBoxes;
+
+        [DefaultValue(true)]
+        [Label("Destroyer probe laser glow")]
+        [Tooltip("Makes the Pink Lasers shot by Destroyer Probes glow, like all other lasers. This makes them way easier to see at night.")]
+        public bool ProbeLaserGlow;
     }
 
     public class QoLConfig : ModConfig {
