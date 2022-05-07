@@ -10,6 +10,7 @@ namespace ShardionsMod.Content.QoL.NPCs
 {
 	public class QoLGlobalNPC : GlobalNPC
 	{
+        public override bool InstancePerEntity => true;
         int[] mushroomEnemies = {
             NPCID.SporeBat,
             NPCID.SporeSkeleton,
