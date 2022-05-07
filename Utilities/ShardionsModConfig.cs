@@ -66,12 +66,10 @@ namespace ShardionsMod.Utilities
         [Tooltip("Changes the Molotov Cocktail recipe to require 5 Gel instead of 1 Pink Gel.")]
         public bool MolotovRecipeBuff;
         
-        /* Disabled until I figure out how to change an NPC's drops
         [DefaultValue(true)]
         [Label("Swap Soaring Insignia and Gravity Globe")]
-        [Tooltip("Makes the Soaring Insignia drop from the Moon Lord, and the Gravity Globe drop from the Empress of Light.")]
+        [Tooltip("Makes the Soaring Insignia drop from the Moon Lord, and the Gravity Globe drop from the Empress of Light.\nDisable this if a mod you have adds items to the Empress of Light's Treasure Bag.")]
         public bool SwapSoaringInsignia;
-        */
 
         [DefaultValue(true)]
         [Label("Magiluminescence recipe nerf")]

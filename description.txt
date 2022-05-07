@@ -1,4 +1,4 @@
-Shardion's Mod is a modular, configurable mod for minor enhancements to Terraria.
+Shardion's Mod is an extremely configurable mod for minor enhancements to Terraria.
 Currently, it includes three "modules":
 Various Vanities adds new vanity items and quality-of-life features surrounding vanity items.
 Unnamed Quality-of-Life module adds many quality-of-life features, such as crate upgrading/downgrading and gem conversion.
