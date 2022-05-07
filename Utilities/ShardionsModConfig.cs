@@ -119,5 +119,14 @@ namespace ShardionsMod.Utilities
         [Tooltip("Allows you to convert gems to Diamonds and back. Locks sell price of all gems to that of Amethyst. Requires a reload.")]
         public bool GemCrafting;
 
+        [DefaultValue(true)]
+        [Label("Chlorophyte Bar recipe buff")]
+        [Tooltip("Changes the Chlorophyte Bar recipe to require 4 Chlorophyte Ore, instead of 5. Reduces tedious Chlorophyte grind.")]
+        public bool ChlorophyteBarRecipeBuff;
+
+        [DefaultValue(true)]
+        [Label("Glowing Mushroom biome enemies drop Mushroom Grass Seeds")]
+        [Tooltip("Adds 1 Glowing Mushroom Grass Seeds to the drops of all Glowing Mushroom enemies, at a 10% chance,\nand 2 Glowing Mushroom Grass Seeds at a 100% chance for Truffle Worms.")]
+        public bool MushroomEnemiesDropSeeds;
     }
 }
