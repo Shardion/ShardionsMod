@@ -1,6 +1,6 @@
 Shardion's Mod is an extremely configurable mod for minor enhancements to Terraria.
 Currently, it includes three "modules":
-Various Vanities adds new vanity items and quality-of-life features surrounding vanity items.
+Various Vanities adds new furniture and vanity items, and quality-of-life features surrounding them.
 Unnamed Quality-of-Life module adds many quality-of-life features, such as crate upgrading/downgrading and gem conversion.
 Unnamed balancing module attempts to correct issues in the game's balancing, by doing things like swapping the Gravity Globe and Soaring Insignia.
 

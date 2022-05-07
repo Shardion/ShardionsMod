@@ -67,8 +67,8 @@ namespace ShardionsMod.Utilities
         public bool MolotovRecipeBuff;
         
         [DefaultValue(true)]
-        [Label("Swap Soaring Insignia and Gravity Globe")]
-        [Tooltip("Makes the Soaring Insignia drop from the Moon Lord, and the Gravity Globe drop from the Empress of Light.\nDisable this if a mod you have adds items to the Empress of Light's Treasure Bag.")]
+        [Label("Empress of Light drops Gravity Globe")]
+        [Tooltip("Makes the Empress of Light drop the Gravity Globe in Expert Mode, instead of the Soaring Insignia.\nDisable this if a mod you have adds items to the Empress of Light's Treasure Bag.")]
         public bool SwapSoaringInsignia;
 
         [DefaultValue(true)]
