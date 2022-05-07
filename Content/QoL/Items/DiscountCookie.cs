@@ -1,8 +1,8 @@
 using Terraria.ID;
 using Terraria;
-using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using ShardionsMod.Utilities;
+using Terraria.DataStructures;
 using static ShardionsMod.Content.QoL.Recipes.QoLConditions;
 
 namespace ShardionsMod.Content.QoL.Items
@@ -11,15 +11,14 @@ namespace ShardionsMod.Content.QoL.Items
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Eat to permanently gain the Discount Card effect\nDoes not stack with the Discount Card\nWe are aware the sprite is broken");
-
-			ItemID.Sets.FoodParticleColors[Item.type] = new Color[3] {
+            Tooltip.SetDefault("Eat to permanently gain the Discount Card effect\nDoes not stack with the Discount Card");
+            Main.RegisterItemAnimation(Type, new DrawAnimationVertical(int.MaxValue, 3));
+	        ItemID.Sets.FoodParticleColors[Item.type] = new Color[3] {
 				new Color(81, 121, 194),
 				new Color(59, 63, 77),
 				new Color(175, 215, 211)
 			};
-
-			ItemID.Sets.IsFood[Type] = true; //This allows it to be placed on a plate and held correctly
+		    ItemID.Sets.IsFood[Type] = true; //This allows it to be placed on a plate and held correctly
         }
 
         public override void SetDefaults()
