@@ -43,17 +43,15 @@ namespace ShardionsMod.Utilities
             }
         }
 
-        public virtual void VVSetMatch(bool male, ref int equipSlot, ref bool robes) { }
-
-        // Commented until Iban's AddEquipTexture fix is in 1.4-preview
-        /*public sealed override void SetMatch(bool male, ref int equipSlot, ref bool robes)
+        public virtual void VVSetMatch(bool male, ref int equipSlot, ref bool robes) {}
+        public sealed override void SetMatch(bool male, ref int equipSlot, ref bool robes)
         {
             VVSetMatch(male, ref equipSlot, ref robes);
             if (!male && FemaleLegsTexture != null)
             {
-                equipSlot = Mod.GetEquipSlot(FemaleLegsTexture, EquipType.Legs);
+                equipSlot = EquipLoader.GetEquipSlot(Mod, FemaleLegsTexture, EquipType.Legs);
             }
-        }*/
+        }
 
         public void AddVariantRecipe(ModItem from, ModItem variant)
         {

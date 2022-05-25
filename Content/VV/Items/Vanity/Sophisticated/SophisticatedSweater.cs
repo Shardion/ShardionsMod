@@ -9,8 +9,8 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("'A boring sweater for a boring person'");
-            int bodySlot = Mod.GetEquipSlot(Name, EquipType.Body);
+            //Tooltip.SetDefault("'A boring sweater for a boring person'");
+            int bodySlot = EquipLoader.GetEquipSlot(Mod, Name, EquipType.Body);
             ArmorIDs.Body.Sets.HidesHands[bodySlot] = false;
         }
 

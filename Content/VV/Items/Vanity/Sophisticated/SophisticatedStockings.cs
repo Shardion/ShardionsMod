@@ -10,7 +10,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sophisticated Stockings");
-            Tooltip.SetDefault("'Not the best idea in this world'\nMade unobtainable due to multiple tModLoader 1.4 regressions, as the sprite cannot look correct with them\nExpect a fix in 4 or 5 weeks");
+            //Tooltip.SetDefault("'Not the best idea in this world'");
         }
 
         // this is a separate function so we don't have to redefine the entire setdefaults function each time
@@ -29,7 +29,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
         }
 
         public override void AddRecipes()
-        {/*
+        {
             this.CreateRecipe()
                 .AddCondition(Content.VV.Recipes.VVConditions.AreThreadRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
@@ -51,7 +51,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .AddIngredient(Mod, "Fabric", 3)
                 .AddTile(TileID.Loom)
                 .Register();
-        */}
+        }
     }/* // nooooooooo mooooooooooore variants! i actually kinda liked the variety but whatever it got too difficult to maintain
     [AutoloadEquip(EquipType.Legs)]
     public class SophisticatedStockingsNoBand : SophisticatedStockings

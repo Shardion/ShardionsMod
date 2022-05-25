@@ -11,7 +11,7 @@ namespace ShardionsMod.Content.VV
 	{
         public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath) 
         {
-            if (Player.name == "shardion" && Player.Male == false)
+            if (Player.name == "shardion")
                 return new Item[2] { GetInstance<VV.Items.Vanity.Sophisticated.SophisticatedStockings>().Item, GetInstance<VV.Items.Vanity.Sophisticated.SophisticatedSweater>().Item };
             return Enumerable.Empty<Item>();
         }

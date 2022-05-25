@@ -14,6 +14,7 @@ namespace ShardionsMod.Content.Balancing.Items
 			if (context == "bossBag" && arg == ItemID.FairyQueenBossBag && ModContent.GetInstance<Utilities.BalancingConfig>().SwapSoaringInsignia) { // EoL bag
 				// We have to manually re-implement the drops
 				// Might not be 100% accurate to the original bag but I can't find the code in vanilla for bags so
+				// Why do bags not use the loot system implemented in 1.4????????
 				var entitySource = player.GetSource_OpenItem(ItemID.FairyQueenBossBag);
 				var pickOneOfFour = Main.rand.Next(4);
 				if (Main.rand.NextBool(7)) { player.QuickSpawnItem(entitySource, ItemID.FairyQueenMask); } // Empress of Light Mask
