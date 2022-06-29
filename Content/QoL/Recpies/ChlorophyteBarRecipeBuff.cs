@@ -26,7 +26,7 @@ namespace ShardionsMod.Content.QoL.Recipes
                 }
             }
 
-            Mod.CreateRecipe(ItemID.ChlorophyteBar).AddCondition(IsChlorophyteBarRecipeBuffEnabled).AddIngredient(ItemID.ChlorophyteOre, 4).AddTile(TileID.AdamantiteForge).Register();
+            Recipe.Create(ItemID.ChlorophyteBar).AddCondition(IsChlorophyteBarRecipeBuffEnabled).AddIngredient(ItemID.ChlorophyteOre, 4).AddTile(TileID.AdamantiteForge).Register();
         }
 
         public override void Unload()

@@ -44,8 +44,8 @@ namespace ShardionsMod.Content.Balancing.Recipes
                 }
             }
 
-            Mod.CreateRecipe(ItemID.Magiluminescence).AddCondition(IsMagiluminescenceRecipeNerfEnabled).AddIngredient(ItemID.Topaz, 5).AddIngredient(ItemID.DemoniteBar, 12).AddIngredient(ItemID.ShadowScale, 4).AddTile(TileID.Anvils).Register();
-            Mod.CreateRecipe(ItemID.Magiluminescence).AddCondition(IsMagiluminescenceRecipeNerfEnabled).AddIngredient(ItemID.Topaz, 5).AddIngredient(ItemID.CrimtaneBar, 12).AddIngredient(ItemID.TissueSample, 4).AddTile(TileID.Anvils).Register();
+            Recipe.Create(ItemID.Magiluminescence).AddCondition(IsMagiluminescenceRecipeNerfEnabled).AddIngredient(ItemID.Topaz, 5).AddIngredient(ItemID.DemoniteBar, 12).AddIngredient(ItemID.ShadowScale, 4).AddTile(TileID.Anvils).Register();
+            Recipe.Create(ItemID.Magiluminescence).AddCondition(IsMagiluminescenceRecipeNerfEnabled).AddIngredient(ItemID.Topaz, 5).AddIngredient(ItemID.CrimtaneBar, 12).AddIngredient(ItemID.TissueSample, 4).AddTile(TileID.Anvils).Register();
         }
 
         public override void Unload()

@@ -34,14 +34,14 @@ namespace ShardionsMod.Content.VV.Recipes
 
             for (int i = 0; i < 3; i++)
             {
-                Mod.CreateRecipe(vanillaThreads[i, 0], 3)
+                Recipe.Create(vanillaThreads[i, 0], 3)
                 .AddCondition(IsVVEnabled)
                 .AddIngredient(Mod, "WhiteThread", 3)
                 .AddIngredient(vanillaThreads[i, 1], 1)
                 .AddTile(TileID.Loom)
                 .Register();
 
-                Mod.CreateRecipe(vanillaThreads[i, 0], 6)
+                Recipe.Create(vanillaThreads[i, 0], 6)
                 .AddCondition(IsVVEnabled)
                 .AddIngredient(Mod, "WhiteThread", 6)
                 .AddIngredient(vanillaThreads[i, 1], 1)

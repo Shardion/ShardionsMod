@@ -1,5 +1,6 @@
 using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria;
 using static ShardionsMod.Content.QoL.Recipes.QoLConditions;
 
 namespace ShardionsMod.Content.QoL.Recipes
@@ -17,12 +18,12 @@ namespace ShardionsMod.Content.QoL.Recipes
                 ItemID.Amber
             };
             foreach (int gem in gems) {
-                Mod.CreateRecipe(ItemID.Diamond)
+                Recipe.Create(ItemID.Diamond)
                     .AddCondition(IsGemCraftingEnabled)
                     .AddIngredient(gem)
                     .AddTile(TileID.DemonAltar)
                     .Register();
-                Mod.CreateRecipe(gem)
+                Recipe.Create(gem)
                     .AddCondition(IsGemCraftingEnabled)
                     .AddIngredient(ItemID.Diamond)
                     .AddTile(TileID.DemonAltar)

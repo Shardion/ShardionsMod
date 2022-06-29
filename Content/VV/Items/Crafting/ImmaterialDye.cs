@@ -1,4 +1,4 @@
-using Terraria.ModLoader;
+using Terraria;
 using Terraria.ID;
 using ShardionsMod.Utilities;
 
@@ -45,7 +45,7 @@ namespace ShardionsMod.Content.VV.Items.Crafting
 
             foreach (int dye in dyes)
             {
-                Mod.CreateRecipe(dye)
+                Recipe.Create(dye)
                     .AddCondition(Content.VV.Recipes.VVConditions.IsVVEnabled)
                     .AddIngredient(this, 1)
                     .AddTile(TileID.DyeVat)

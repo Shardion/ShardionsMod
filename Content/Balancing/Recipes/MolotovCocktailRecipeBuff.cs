@@ -28,7 +28,7 @@ namespace ShardionsMod.Content.Balancing.Recipes
                 }
             }
 
-            Mod.CreateRecipe(ItemID.MolotovCocktail, 5).AddCondition(IsMolotovCocktailRecipeBuffEnabled).AddIngredient(ItemID.Ale, 5).AddIngredient(ItemID.Gel, 5).AddIngredient(ItemID.Silk, 1).AddIngredient(ItemID.Torch, 1).Register();
+            Recipe.Create(ItemID.MolotovCocktail, 5).AddCondition(IsMolotovCocktailRecipeBuffEnabled).AddIngredient(ItemID.Ale, 5).AddIngredient(ItemID.Gel, 5).AddIngredient(ItemID.Silk, 1).AddIngredient(ItemID.Torch, 1).Register();
         }
 
         public override void Unload()

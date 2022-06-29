@@ -28,7 +28,7 @@ namespace ShardionsMod.Content.Balancing.Recipes
                 }
             }
 
-            Mod.CreateRecipe(ItemID.TerrasparkBoots)
+            Recipe.Create(ItemID.TerrasparkBoots)
                 .AddCondition(IsTerrasparkBootsRecipeNerfEnabled)
                 .AddIngredient(ItemID.FrostsparkBoots)
                 .AddIngredient(ItemID.LavaWaders)
