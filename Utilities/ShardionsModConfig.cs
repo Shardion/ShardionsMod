@@ -31,6 +31,11 @@ namespace ShardionsMod.Utilities
         [JsonIgnore]
         public bool _none;
 
+        [DefaultValue(true)]
+        [Label("Pre-Boss Familiar set recipes")]
+        [Tooltip("Adds recipes for the Familiar vanity set that can be created pre-boss.")]
+        public bool PreBossFamiliarSet;
+
         [Header("Dye Handling In Vanity Recipes")]
 
         [DefaultValue(true)]
@@ -47,11 +52,7 @@ namespace ShardionsMod.Utilities
         [Label("Use no color in vanity recipes")]
         [Tooltip("Does not require a world rejoin or mod reload!")]
         public bool DoNone { get { return _none; } set { if (value) { _dyedThreads = false; _dyes = false; _none = true; } } }
-        
-        [DefaultValue(true)]
-        [Label("Pre-Boss Familiar set recipes")]
-        [Tooltip("Adds recipes for the Familiar vanity set that can be created pre-boss.")]
-        public bool PreBossFamiliarSet;
+
     }
     public class BalancingConfig : ModConfig {
         public override ConfigScope Mode => ConfigScope.ServerSide;
