@@ -31,8 +31,8 @@ namespace ShardionsMod.Content.Balancing.NPCs
 				}
 				foreach(int item in planterBoxes) {
 					if (!ignore.Contains<int>(item)) {
-						corruptAndShouldIgnoreCrimson = (item == ItemID.CorruptPlanterBox && ignore.Contains<int>(ItemID.CrimsonPlanterBox));
-						crimsonAndShouldIgnoreCorrupt = (item == ItemID.CrimsonPlanterBox && ignore.Contains<int>(ItemID.CorruptPlanterBox));
+						var corruptAndShouldIgnoreCrimson = (item == ItemID.CorruptPlanterBox && ignore.Contains<int>(ItemID.CrimsonPlanterBox));
+						var crimsonAndShouldIgnoreCorrupt = (item == ItemID.CrimsonPlanterBox && ignore.Contains<int>(ItemID.CorruptPlanterBox));
 						if (!(corruptAndShouldIgnoreCrimson || crimsonAndShouldIgnoreCorrupt))
 						{
 							shop.item[nextSlot].SetDefaults(item);
