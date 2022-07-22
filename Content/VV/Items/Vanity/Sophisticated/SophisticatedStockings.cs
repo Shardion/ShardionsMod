@@ -10,11 +10,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sophisticated Stockings");
-            //Tooltip.SetDefault("'Not the best idea in this world'");
         }
-
-        // this is a separate function so we don't have to redefine the entire setdefaults function each time
-        //public virtual void SetVariantDefaults() { Variant = "White Banded"; FemaleLegsTexture = "SophisticatedStockings_FemaleLegs"; }
 
         public override void SetDefaults()
         {
@@ -52,35 +48,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .AddTile(TileID.Loom)
                 .Register();
         }
-    }/* // nooooooooo mooooooooooore variants! i actually kinda liked the variety but whatever it got too difficult to maintain
-    [AutoloadEquip(EquipType.Legs)]
-    public class SophisticatedStockingsNoBand : SophisticatedStockings
-    {
-        public override void SetVariantDefaults() { Variant = "White"; FemaleLegsTexture = "SophisticatedStockingsNoBand_FemaleLegs"; }
-        public override void AddRecipes() { AddVariantRecipe(ModContent.GetInstance<SophisticatedStockings>(), this); }
     }
-    [AutoloadEquip(EquipType.Legs)]
-    public class SophisticatedStockingsNoSuspenders : SophisticatedStockings
-    {
-        public override void SetVariantDefaults() { Variant = "White Banded (No Suspenders)"; FemaleLegsTexture = "SophisticatedStockingsNoSuspenders_FemaleLegs"; }
-        public override void AddRecipes() { AddVariantRecipe(ModContent.GetInstance<SophisticatedStockings>(), this); }
-    }
-    [AutoloadEquip(EquipType.Legs)]
-    public class SophisticatedStockingsNoBandNoSuspenders : SophisticatedStockings
-    {
-        public override void SetVariantDefaults() { Variant = "White (No Suspenders)"; FemaleLegsTexture = "SophisticatedStockingsNoBandNoSuspenders_FemaleLegs"; }
-        public override void AddRecipes() { AddVariantRecipe(ModContent.GetInstance<SophisticatedStockingsNoBand>(), this); }
-    }
-    [AutoloadEquip(EquipType.Legs)]
-    public class SophisticatedStockingsBlack : SophisticatedStockings
-    {
-        public override void SetVariantDefaults() { Variant = "Black"; FemaleLegsTexture = "SophisticatedStockingsBlack_FemaleLegs"; }
-        public override void AddRecipes() { AddVariantRecipe(ModContent.GetInstance<SophisticatedStockings>(), this); }
-    }
-    [AutoloadEquip(EquipType.Legs)]
-    public class SophisticatedStockingsBlackNoSuspenders : SophisticatedStockings
-    {
-        public override void SetVariantDefaults() { Variant = "Black (No Suspenders)"; FemaleLegsTexture = "SophisticatedStockingsBlackNoSuspenders_FemaleLegs"; }
-        public override void AddRecipes() { AddVariantRecipe(ModContent.GetInstance<SophisticatedStockingsBlack>(), this); }
-    }*/
+    // long ago, there were variants of this item
+    // now, they only live as layers in the krita files, doomed to eternal obscurity
 }
