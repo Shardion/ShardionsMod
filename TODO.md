@@ -1,12 +1,12 @@
 # The Official To-Do List
 ## High priority
-- [ ] Re-implement female leg textures for armor after [IbanPlay's tMod fix](https://github.com/tModLoader/tModLoader/pull/2277) is merged and in stable
+- [X] Re-implement female leg textures for armor after [IbanPlay's tMod fix](https://github.com/tModLoader/tModLoader/pull/2277) is merged and in stable
 ## Normal priority
-- [ ] Add an option to swap the drop conditions for the Gravity Globe and the Soaring Insignia 
-- [ ] ![lol](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/TaterBlight_Telling_Me_To_Make_Male_Legs_Sprites.png?raw=true)
+- [X] Add an option to swap the drop conditions for the Gravity Globe and the Soaring Insignia 
+- [X] ![lol](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/TaterBlight_Telling_Me_To_Make_Male_Legs_Sprites.png?raw=true)
 - [ ] Pre-Hardmode ore variants can be converted at an Alchemy Table, Hardmode ore variants at a Lihzahrd Altar (the Golem summoning tile)
 - [ ] Extractinator only gives the ore variants you did not get in your world, and gives coins significantly less often
-- [ ] Immaterial Dye needs a sprite
+- [X] Immaterial Dye needs a sprite
 ## Low priority
 ## ["Plant priority"](https://github.com/Shardion/ShardionsMod/blob/master/Screenshots/Plant_Telling_Me_To_Make_Him_A_ToDo_List_Priority.png?raw=true)
 - [ ] Implement the Magiluminescence movement speed nerf
