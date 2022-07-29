@@ -29,7 +29,6 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
             this.CreateRecipe()
                 .AddCondition(Content.VV.Recipes.VVConditions.AreThreadRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
-                .AddIngredient(Mod, "CyanThread", 1)
                 .AddIngredient(Mod, "WhiteThread", 1)
                 .AddTile(TileID.Loom)
                 .Register();
@@ -38,7 +37,6 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .AddCondition(Content.VV.Recipes.VVConditions.AreDyeRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
                 .AddIngredient(ItemID.BrightSilverDye, 1)
-                .AddIngredient(ItemID.CyanDye, 1)
                 .AddTile(TileID.Loom)
                 .Register();
             
