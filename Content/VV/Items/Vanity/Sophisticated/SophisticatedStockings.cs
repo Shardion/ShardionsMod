@@ -17,7 +17,7 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
             FemaleLegsTexture = "SophisticatedStockings_FemaleLegs";
             Developer = (int)DevIndex.Shardion;
             Item.width = 22;
-            Item.height = 32;
+            Item.height = 18;
             Item.value = 0;
             Item.rare = 0;
             Item.vanity = true;
@@ -32,14 +32,14 @@ namespace ShardionsMod.Content.VV.Items.Vanity.Sophisticated
                 .AddIngredient(Mod, "WhiteThread", 1)
                 .AddTile(TileID.Loom)
                 .Register();
-            
+
             this.CreateRecipe()
                 .AddCondition(Content.VV.Recipes.VVConditions.AreDyeRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
                 .AddIngredient(ItemID.BrightSilverDye, 1)
                 .AddTile(TileID.Loom)
                 .Register();
-            
+
             this.CreateRecipe()
                 .AddCondition(Content.VV.Recipes.VVConditions.AreNoColorRecipesEnabled)
                 .AddIngredient(Mod, "Fabric", 3)
